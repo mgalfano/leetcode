@@ -17,9 +17,8 @@ var fizzBuzz = function(n) {
   // otherwise, print stringified number
 
   var strings = [];
-  // loop from 1 to n
+
   for (var i = 1; i <= n; i++) {
-    // if i % 3, "Fizz"
     if (i % 3 === 0 && i % 5 === 0) {
       strings.push("FizzBuzz");
     } else if (i % 3 === 0) {
@@ -29,9 +28,6 @@ var fizzBuzz = function(n) {
     } else {
       strings.push(`${i}`);
     }
-    // if i % 5, "Buzz"
-    // if i % 3 and 5, "FizzBuzz"
-    // else, print "i" 
   }
   return strings;
     
